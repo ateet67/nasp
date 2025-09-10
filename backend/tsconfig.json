@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2023",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@common/*": ["src/common/*"],
+      "@constants": ["src/constants"],
+      "@controllers/*": ["src/controllers/*"],
+      "@dtos/*": ["src/dtos/*"],
+      "@models/*": ["src/models/*"],
+      "@modules/*": ["src/controllers/v1/*"],
+      "@utils/*": ["src/utils/*"]
+    },
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": true,
+    "noFallthroughCasesInSwitch": true
+  }
+}

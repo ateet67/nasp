@@ -1,0 +1,221 @@
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  background: white;
+}
+
+.auth-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: white;
+}
+
+.auth-right {
+  flex: 1;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect fill="%23f0f0f0" width="800" height="600"/><text x="400" y="300" text-anchor="middle" font-family="Arial" font-size="24" fill="%23999">Bear Image Placeholder</text></svg>');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border: 3px solid #ff6b35;
+  color: #ff6b35;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.auth-brand h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6b35;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.auth-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  font-family: 'Arial', sans-serif;
+}
+
+.auth-desc {
+  color: #666;
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+}
+
+.input {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+  background: white;
+  position: relative;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ff6b35;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  font-size: 18px;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 14px;
+  background: #fef2f2;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #fecaca;
+  font-family: 'Arial', sans-serif;
+}
+
+.success {
+  color: #059669;
+  font-size: 14px;
+  background: #ecfdf5;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #a7f3d0;
+  font-family: 'Arial', sans-serif;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.actions.buttons-side-by-side {
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.link {
+  color: #dc2626;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  background: #ffd700;
+  color: #333;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+}
+
+.btn:hover {
+  background: #ffed4e;
+}
+
+.btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #f3f4f6;
+  color: #333;
+  margin-right: 12px;
+  width: auto;
+}
+
+.btn-secondary:hover {
+  background: #e5e7eb;
+}
+
+.auth-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .auth-wrapper {
+    flex-direction: column;
+  }
+  
+  .auth-right {
+    display: none;
+  }
+  
+  .auth-left {
+    padding: 20px;
+  }
+}
