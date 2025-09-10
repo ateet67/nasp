@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
 import { useGetUsersQuery, useDeleteUserMutation } from "../store/api/apiSlice";
@@ -36,6 +36,7 @@ interface User {
 
 export default function UserManagement() {
   const dispatch = useAppDispatch();
+  const [showAddModal, setShowAddModal] = useState(false);
 
   // Redux state
   const users = useAppSelector(selectUsers);
