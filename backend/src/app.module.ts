@@ -20,7 +20,18 @@ import { NotificationsModule } from './controllers/v1/notifications/notification
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
-    MongooseModule.forRoot(process.env.MONGODB_URI ?? 'mongodb://127.0.0.1:27017/cap_nasp'),
+    MongooseModule.forRootAsync({
+      useFactory: async () => {
+        // Allow running without a local MongoDB by using an in-memory server in dev
+        if (process.env.USE_IN_MEMORY_DB === 'true') {
+          const { MongoMemoryServer } = await import('mongodb-memory-server');
+          const mongoServer = await MongoMemoryServer.create();
+          const uri = mongoServer.getUri();
+          return { uri };
+        }
+        return { uri: process.env.MONGODB_URI ?? 'mongodb://127.0.0.1:27017/cap_nasp' };
+      },
+    }),
     UsersModule,
     AuthModule,
     UploadsModule,
