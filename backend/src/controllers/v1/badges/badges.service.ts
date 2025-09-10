@@ -3,6 +3,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
 import { Badge, BadgeDocument, BadgeType } from '../../../models/badge.model';
 import { StudentBadge, StudentBadgeDocument } from '../../../models/student-badge.model';
+import { CreateBadgeDto } from '../../../dtos/badges.dto';
 
 @Injectable()
 export class BadgesService {
@@ -11,8 +12,18 @@ export class BadgesService {
     @InjectModel(StudentBadge.name) private readonly studentBadgeModel: Model<StudentBadgeDocument>,
   ) {}
 
-  async createBadge(data: Partial<Badge>) {
-    return this.badgeModel.create(data);
+  async createBadge(dto: CreateBadgeDto) {
+    const payload: Partial<Badge> = {
+      name: dto.name,
+      description: dto.description,
+      type: dto.type,
+      iconUrl: dto.iconUrl,
+      points: dto.points,
+      requiredScore: dto.requiredScore,
+      conservationId: dto.conservationId ? new Types.ObjectId(dto.conservationId) : undefined,
+      topicId: dto.topicId ? new Types.ObjectId(dto.topicId) : undefined,
+    };
+    return this.badgeModel.create(payload);
   }
 
   async getAllBadges() {
