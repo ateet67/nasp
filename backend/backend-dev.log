@@ -274,3 +274,28 @@ MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
 [32m[Nest] 23707  - [39m09/10/2025, 9:25:01 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
 [32m[Nest] 23707  - [39m09/10/2025, 9:25:01 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
 [32m[Nest] 23707  - [39m09/10/2025, 9:25:01 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUploadsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[31m[Nest] 23707  - [39m09/10/2025, 9:25:31 AM [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (1)...[39m
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/workspace/backend/node_modules/mongoose/lib/connection.js:1165:11)
+    at NativeConnection.asPromise (/workspace/backend/node_modules/mongoose/lib/connection.js:1635:11)
+    at async <anonymous> (/workspace/backend/node_modules/@nestjs/mongoose/lib/mongoose-core.module.ts:70:15)
+[31m[Nest] 23707  - [39m09/10/2025, 9:26:04 AM [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (2)...[39m
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/workspace/backend/node_modules/mongoose/lib/connection.js:1165:11)
+    at NativeConnection.asPromise (/workspace/backend/node_modules/mongoose/lib/connection.js:1635:11)
+    at async <anonymous> (/workspace/backend/node_modules/@nestjs/mongoose/lib/mongoose-core.module.ts:70:15)
+[31m[Nest] 23707  - [39m09/10/2025, 9:26:37 AM [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (3)...[39m
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/workspace/backend/node_modules/mongoose/lib/connection.js:1165:11)
+    at NativeConnection.asPromise (/workspace/backend/node_modules/mongoose/lib/connection.js:1635:11)
+    at async <anonymous> (/workspace/backend/node_modules/@nestjs/mongoose/lib/mongoose-core.module.ts:70:15)
+[31m[Nest] 23707  - [39m09/10/2025, 9:27:10 AM [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (4)...[39m
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/workspace/backend/node_modules/mongoose/lib/connection.js:1165:11)
+    at NativeConnection.asPromise (/workspace/backend/node_modules/mongoose/lib/connection.js:1635:11)
+    at async <anonymous> (/workspace/backend/node_modules/@nestjs/mongoose/lib/mongoose-core.module.ts:70:15)
+[31m[Nest] 23707  - [39m09/10/2025, 9:27:43 AM [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (5)...[39m
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/workspace/backend/node_modules/mongoose/lib/connection.js:1165:11)
+    at NativeConnection.asPromise (/workspace/backend/node_modules/mongoose/lib/connection.js:1635:11)
+    at async <anonymous> (/workspace/backend/node_modules/@nestjs/mongoose/lib/mongoose-core.module.ts:70:15)
