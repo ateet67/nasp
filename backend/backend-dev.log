@@ -299,3 +299,150 @@ MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
     at _handleConnectionErrors (/workspace/backend/node_modules/mongoose/lib/connection.js:1165:11)
     at NativeConnection.asPromise (/workspace/backend/node_modules/mongoose/lib/connection.js:1635:11)
     at async <anonymous> (/workspace/backend/node_modules/@nestjs/mongoose/lib/mongoose-core.module.ts:70:15)
+[31m[Nest] 23707  - [39m09/10/2025, 9:28:16 AM [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (6)...[39m
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/workspace/backend/node_modules/mongoose/lib/connection.js:1165:11)
+    at NativeConnection.asPromise (/workspace/backend/node_modules/mongoose/lib/connection.js:1635:11)
+    at async <anonymous> (/workspace/backend/node_modules/@nestjs/mongoose/lib/mongoose-core.module.ts:70:15)
+[31m[Nest] 23707  - [39m09/10/2025, 9:28:49 AM [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (7)...[39m
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/workspace/backend/node_modules/mongoose/lib/connection.js:1165:11)
+    at NativeConnection.asPromise (/workspace/backend/node_modules/mongoose/lib/connection.js:1635:11)
+    at async <anonymous> (/workspace/backend/node_modules/@nestjs/mongoose/lib/mongoose-core.module.ts:70:15)
+[31m[Nest] 23707  - [39m09/10/2025, 9:29:22 AM [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (8)...[39m
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/workspace/backend/node_modules/mongoose/lib/connection.js:1165:11)
+    at NativeConnection.asPromise (/workspace/backend/node_modules/mongoose/lib/connection.js:1635:11)
+    at async <anonymous> (/workspace/backend/node_modules/@nestjs/mongoose/lib/mongoose-core.module.ts:70:15)
+[31m[Nest] 23707  - [39m09/10/2025, 9:29:55 AM [31m  ERROR[39m [38;5;3m[MongooseModule] [39m[31mUnable to connect to the database. Retrying (9)...[39m
+MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors (/workspace/backend/node_modules/mongoose/lib/connection.js:1165:11)
+    at NativeConnection.asPromise (/workspace/backend/node_modules/mongoose/lib/connection.js:1635:11)
+    at async <anonymous> (/workspace/backend/node_modules/@nestjs/mongoose/lib/mongoose-core.module.ts:70:15)
+[31m[Nest] 23707  - [39m09/10/2025, 9:29:55 AM [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39mMongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at _handleConnectionErrors [90m(/workspace/backend/[39mnode_modules/[4mmongoose[24m/lib/connection.js:1165:11[90m)[39m
+    at NativeConnection.asPromise [90m(/workspace/backend/[39mnode_modules/[4mmongoose[24m/lib/connection.js:1635:11[90m)[39m
+    at async <anonymous> [90m(/workspace/backend/[39mnode_modules/[4m@nestjs[24m/mongoose/lib/mongoose-core.module.ts:70:15[90m)[39m {
+  errorLabelSet: Set(0) {},
+  reason: TopologyDescription {
+    type: [32m'Unknown'[39m,
+    servers: Map(1) {
+      [32m'127.0.0.1:27017'[39m => ServerDescription {
+        address: [32m'127.0.0.1:27017'[39m,
+        type: [32m'Unknown'[39m,
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: [33m0[39m,
+        maxWireVersion: [33m0[39m,
+        roundTripTime: [33m-1[39m,
+        minRoundTripTime: [33m0[39m,
+        lastUpdateTime: [33m1212524412[39m,
+        lastWriteDate: [33m0[39m,
+        error: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+            at Socket.<anonymous> [90m(/workspace/backend/[39mnode_modules/[4mmongodb[24m/src/cmap/connect.ts:395:16[90m)[39m
+        [90m    at Object.onceWrapper (node:events:633:26)[39m
+        [90m    at Socket.emit (node:events:518:28)[39m
+        [90m    at emitErrorNT (node:internal/streams/destroy:170:8)[39m
+        [90m    at emitErrorCloseNT (node:internal/streams/destroy:129:3)[39m
+        [90m    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)[39m {
+          errorLabelSet: Set(1) {
+            [32m'ResetPool'[39m
+          },
+          beforeHandshake: [33mfalse[39m,
+          [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+          [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1636:16)[39m {
+            errno: [33m-111[39m,
+            code: [32m'ECONNREFUSED'[39m,
+            syscall: [32m'connect'[39m,
+            address: [32m'127.0.0.1'[39m,
+            port: [33m27017[39m
+          }
+        },
+        topologyVersion: [1mnull[22m,
+        setName: [1mnull[22m,
+        setVersion: [1mnull[22m,
+        electionId: [1mnull[22m,
+        logicalSessionTimeoutMinutes: [1mnull[22m,
+        maxMessageSizeBytes: [1mnull[22m,
+        maxWriteBatchSize: [1mnull[22m,
+        maxBsonObjectSize: [1mnull[22m,
+        primary: [1mnull[22m,
+        me: [1mnull[22m,
+        [32m'$clusterTime'[39m: [1mnull[22m,
+        iscryptd: [33mfalse[39m
+      }
+    },
+    stale: [33mfalse[39m,
+    compatible: [33mtrue[39m,
+    heartbeatFrequencyMS: [33m10000[39m,
+    localThresholdMS: [33m15[39m,
+    setName: [1mnull[22m,
+    maxElectionId: [1mnull[22m,
+    maxSetVersion: [1mnull[22m,
+    commonWireVersion: [33m0[39m,
+    logicalSessionTimeoutMinutes: [1mnull[22m
+  },
+  code: [90mundefined[39m,
+  cause: TopologyDescription {
+    type: [32m'Unknown'[39m,
+    servers: Map(1) {
+      [32m'127.0.0.1:27017'[39m => ServerDescription {
+        address: [32m'127.0.0.1:27017'[39m,
+        type: [32m'Unknown'[39m,
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: [33m0[39m,
+        maxWireVersion: [33m0[39m,
+        roundTripTime: [33m-1[39m,
+        minRoundTripTime: [33m0[39m,
+        lastUpdateTime: [33m1212524412[39m,
+        lastWriteDate: [33m0[39m,
+        error: MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
+            at Socket.<anonymous> [90m(/workspace/backend/[39mnode_modules/[4mmongodb[24m/src/cmap/connect.ts:395:16[90m)[39m
+        [90m    at Object.onceWrapper (node:events:633:26)[39m
+        [90m    at Socket.emit (node:events:518:28)[39m
+        [90m    at emitErrorNT (node:internal/streams/destroy:170:8)[39m
+        [90m    at emitErrorCloseNT (node:internal/streams/destroy:129:3)[39m
+        [90m    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)[39m {
+          errorLabelSet: Set(1) {
+            [32m'ResetPool'[39m
+          },
+          beforeHandshake: [33mfalse[39m,
+          [cause]: Error: connect ECONNREFUSED 127.0.0.1:27017
+          [90m    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1636:16)[39m {
+            errno: [33m-111[39m,
+            code: [32m'ECONNREFUSED'[39m,
+            syscall: [32m'connect'[39m,
+            address: [32m'127.0.0.1'[39m,
+            port: [33m27017[39m
+          }
+        },
+        topologyVersion: [1mnull[22m,
+        setName: [1mnull[22m,
+        setVersion: [1mnull[22m,
+        electionId: [1mnull[22m,
+        logicalSessionTimeoutMinutes: [1mnull[22m,
+        maxMessageSizeBytes: [1mnull[22m,
+        maxWriteBatchSize: [1mnull[22m,
+        maxBsonObjectSize: [1mnull[22m,
+        primary: [1mnull[22m,
+        me: [1mnull[22m,
+        [32m'$clusterTime'[39m: [1mnull[22m,
+        iscryptd: [33mfalse[39m
+      }
+    },
+    stale: [33mfalse[39m,
+    compatible: [33mtrue[39m,
+    heartbeatFrequencyMS: [33m10000[39m,
+    localThresholdMS: [33m15[39m,
+    setName: [1mnull[22m,
+    maxElectionId: [1mnull[22m,
+    maxSetVersion: [1mnull[22m,
+    commonWireVersion: [33m0[39m,
+    logicalSessionTimeoutMinutes: [1mnull[22m
+  }
+}
